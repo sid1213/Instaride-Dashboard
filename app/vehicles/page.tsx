@@ -17,19 +17,19 @@ const columns: ColumnsType<DataType> = [
     key: "_id",
   },
   {
-    title: "Name",
-    dataIndex: "name",
-    key: "name",
+    title: "City",
+    dataIndex: "city",
+    key: "city",
+  },
+  {
+    title: "Hub",
+    dataIndex: "hub",
+    key: "hub",
   },
   {
     title: "Brand",
     dataIndex: "brand",
     key: "brand",
-  },
-  {
-    title: "Self Pickup",
-    dataIndex: "pickup",
-    key: "pickup",
   },
   {
     title: "Hubs",

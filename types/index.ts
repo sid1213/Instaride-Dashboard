@@ -22,6 +22,7 @@ export interface PackageI {
   name: string;
   price: number;
   limit: number;
+  deposit: number;
 }
 interface Vehicle {
   _id: number;
@@ -39,16 +40,10 @@ interface Vehicle {
   engineType: string;
   startingMethod: "KICK" | "SELF";
   transmission: string;
-  make_year: number;
+  makeYear: number;
   package: PackageI[];
   isAdminBlocked: boolean;
   tnc: string[];
-  fullAddress: string;
-  operationStart: number;
-  operationEnd: number;
-  closingDays?: null | string[];
-  deposit: number;
-  discount?: any;
   availability: boolean;
   ordersCount: number;
   excess_charge: number;
@@ -61,16 +56,31 @@ interface Vehicle {
 interface Hub {
   _id: number;
   name: string;
+  landmark: string;
+  neighbourhood: string;
+  fullAddress: string;
+  operationStart: number;
+  operationEnd: number;
+  closingDays?: null | string[];
   vehicles: Vehicle[];
 }
 interface Owner {
+  _id: string;
   name: string;
   phone: string;
   otherPhone: string;
   location: string;
+  createdAt: string;
+  updatedAt: string;
 }
-interface CityI {
-  cityName: string;
+interface CitiesI {
+  _id: string;
+  name: string;
   image: string;
+  active: boolean;
+  content: string;
+  title: string;
+  createdAt: string;
+  updatedAt: string;
   hubs: Hub[];
 }
