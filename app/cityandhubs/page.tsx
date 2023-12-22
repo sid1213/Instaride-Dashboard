@@ -1,14 +1,22 @@
 "use client";
 import Style from "./index.module.scss";
-import React, { useEffect, useState } from "react";
-import getAllVehicles from "../api/vahicles/getAllVehicles";
-import { Flex, FloatButton, Table, Tag, Typography } from "antd";
+import React, { ReactNode, useEffect, useState } from "react";
+import { Table, Tag, Typography } from "antd";
 import { ColumnsType } from "antd/es/table";
-import { PackageI, VehicleSchemaI } from "@/types";
+import { CitiesI } from "@/types";
+import data from "../../public/cities.json";
+import Link from "next/link";
 import { EyeOutlined } from "@ant-design/icons";
-
-interface DataType extends VehicleSchemaI {
+import { usePathname } from "next/navigation";
+interface DataType
+  extends Omit<
+    CitiesI,
+    "hubs" | "vehicles" | "createdAt" | "updatedAt" | "active"
+  > {
   key: string;
+  hubs: string[];
+  view: ReactNode;
+  active: string;
 }
 
 const columns: ColumnsType<DataType> = [
@@ -68,34 +76,40 @@ const columns: ColumnsType<DataType> = [
 const { Title } = Typography;
 
 const Page: React.FC = () => {
-  const [vehicle, setVehicle] = useState<DataType[]>([]);
+  const [cities, setCities] = useState<DataType[]>([]);
+  const pathName = usePathname();
 
   useEffect(() => {
-    const data = async () => {
-      const data = await getAllVehicles();
+    const citiesData = data.cities;
 
-      console.log(data);
-      const vehicles = data.map((ele: VehicleSchemaI) => {
-        return {
-          ...ele,
-          key: ele._id,
-          pickup: ele.pickup ? "YES" : "NO",
-          available: ele.available ? "YES" : "NO",
-        };
-      });
-      setVehicle(vehicles);
-      return data;
-    };
-    data();
-  }, []);
+    const CityArray = citiesData.map((city) => {
+      return {
+        ...city,
+        key: city._id,
+        active: city.active ? "YES" : "NO",
+        view: (
+          <Link href={`${pathName}/${city.name}`}>
+            <EyeOutlined />
+          </Link>
+        ),
+        hubs: city.hubs.map((hub) => hub.name),
+      };
+    });
+
+    setCities(CityArray);
+  }, [pathName]);
 
   return (
     <div>
       <Title level={2} className={Style.title}>
         CITY & HUBS
       </Title>
-      <Table scroll={{ x: true }} columns={columns} dataSource={vehicle} />
-      <FloatButton />
+      <Table
+        scroll={{ x: true }}
+        columns={columns}
+        dataSource={cities}
+        pagination={false}
+      />
     </div>
   );
 };
