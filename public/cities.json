@@ -1,0 +1,264 @@
+{
+  "cities": [
+    {
+      "_id": "1",
+      "name": "Delhi",
+      "image": "Delhi.png",
+      "active": true,
+      "content": "The capital city of India, Delhi is a vibrant metropolis blending historic landmarks with modern life.",
+      "title": "Delhi: Historic Heart of India",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "Connaught Place",
+          "landmark": "Connaught Place",
+          "neighbourhood": "Central Delhi",
+          "fullAddress": "Connaught Place, Central Delhi - 110001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Sunday", "Monday"]
+        },
+        {
+          "_id": 2,
+          "name": "Karol Bagh",
+          "landmark": "Karol Bagh",
+          "neighbourhood": "Central Delhi",
+          "fullAddress": "Karol Bagh, Central Delhi - 110005",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Tuesday"]
+        },
+        {
+          "_id": 3,
+          "name": "Saket",
+          "landmark": "Saket",
+          "neighbourhood": "South Delhi",
+          "fullAddress": "Saket, South Delhi - 110017",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Wednesday"]
+        },
+        {
+          "_id": 4,
+          "name": "Lajpat Nagar",
+          "landmark": "Lajpat Nagar",
+          "neighbourhood": "South Delhi",
+          "fullAddress": "Lajpat Nagar, South Delhi - 110024",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Thursday"]
+        },
+        {
+          "_id": 5,
+          "name": "Chandni Chowk",
+          "landmark": "Chandni Chowk",
+          "neighbourhood": "Old Delhi",
+          "fullAddress": "Chandni Chowk, Old Delhi - 110006",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Friday"]
+        }
+      ]
+    },
+    {
+      "_id": "2",
+      "name": "Bhopal",
+      "image": "Bhopal.png",
+      "active": true,
+      "content": "Known as the 'City of Lakes,' Bhopal is a serene blend of natural beauty and cultural richness.",
+      "title": "Bhopal: City of Lakes",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "MP Nagar",
+          "landmark": "MP Nagar",
+          "neighbourhood": "South Bhopal",
+          "fullAddress": "MP Nagar, South Bhopal - 462011",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Saturday"]
+        },
+        {
+          "_id": 2,
+          "name": "Arera Colony",
+          "landmark": "Arera Colony",
+          "neighbourhood": "West Bhopal",
+          "fullAddress": "Arera Colony, West Bhopal - 462016",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Sunday"]
+        },
+        {
+          "_id": 3,
+          "name": "New Market",
+          "landmark": "New Market",
+          "neighbourhood": "Central Bhopal",
+          "fullAddress": "New Market, Central Bhopal - 462003",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Monday"]
+        },
+        {
+          "_id": 4,
+          "name": "TT Nagar",
+          "landmark": "TT Nagar",
+          "neighbourhood": "Central Bhopal",
+          "fullAddress": "TT Nagar, Central Bhopal - 462002",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Wednesday"]
+        },
+        {
+          "_id": 5,
+          "name": "Habibganj",
+          "landmark": "Habibganj",
+          "neighbourhood": "North Bhopal",
+          "fullAddress": "Habibganj, North Bhopal - 462024",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Friday"]
+        }
+      ]
+    },
+    {
+      "_id": "3",
+      "name": "Raipur",
+      "image": "Raipur.png",
+      "active": true,
+      "content": "A bustling city in central India, Raipur is known for its cultural diversity and rapid development.",
+      "title": "Raipur: Harmony in Diversity",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "Telibandha",
+          "landmark": "Telibandha",
+          "neighbourhood": "South Raipur",
+          "fullAddress": "Telibandha, South Raipur - 492001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Sunday"]
+        },
+        {
+          "_id": 2,
+          "name": "Civil Lines",
+          "landmark": "Civil Lines",
+          "neighbourhood": "Central Raipur",
+          "fullAddress": "Civil Lines, Central Raipur - 492001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Tuesday"]
+        },
+        {
+          "_id": 3,
+          "name": "Shankar Nagar",
+          "landmark": "Shankar Nagar",
+          "neighbourhood": "North Raipur",
+          "fullAddress": "Shankar Nagar, North Raipur - 492001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Thursday"]
+        }
+      ]
+    },
+    {
+      "_id": "4",
+      "name": "Bilaspur",
+      "image": "Bilaspur.png",
+      "active": true,
+      "content": "Located in Chhattisgarh, Bilaspur is a city known for its rich cultural heritage and warm hospitality.",
+      "title": "Bilaspur: Heritage and Hospitality",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "Torwa",
+          "landmark": "Torwa",
+          "neighbourhood": "North Bilaspur",
+          "fullAddress": "Torwa, North Bilaspur - 495001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Monday"]
+        },
+        {
+          "_id": 2,
+          "name": "Vyapar Vihar",
+          "landmark": "Vyapar Vihar",
+          "neighbourhood": "Central Bilaspur",
+          "fullAddress": "Vyapar Vihar, Central Bilaspur - 495001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Wednesday"]
+        },
+        {
+          "_id": 3,
+          "name": "Mangla Chowk",
+          "landmark": "Mangla Chowk",
+          "neighbourhood": "South Bilaspur",
+          "fullAddress": "Mangla Chowk, South Bilaspur - 495001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Friday"]
+        }
+      ]
+    },
+    {
+      "_id": "5",
+      "name": "Indore",
+      "image": "Indore.png",
+      "active": true,
+      "content": "Known for its culinary delights, Indore is a vibrant city that seamlessly blends tradition with modernity.",
+      "title": "Indore: Culinary Capital of India",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "Vijay Nagar",
+          "landmark": "Vijay Nagar",
+          "neighbourhood": "West Indore",
+          "fullAddress": "Vijay Nagar, West Indore - 452010",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Saturday"]
+        },
+        {
+          "_id": 2,
+          "name": "MG Road",
+          "landmark": "MG Road",
+          "neighbourhood": "Central Indore",
+          "fullAddress": "MG Road, Central Indore - 452001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Sunday"]
+        },
+        {
+          "_id": 3,
+          "name": "South Tukoganj",
+          "landmark": "South Tukoganj",
+          "neighbourhood": "South Indore",
+          "fullAddress": "South Tukoganj, South Indore - 452001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Tuesday"]
+        },
+        {
+          "_id": 4,
+          "name": "Rajwada",
+          "landmark": "Rajwada",
+          "neighbourhood": "Central Indore",
+          "fullAddress": "Rajwada, Central Indore - 452002",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Thursday"]
+        },
+        {
+          "_id": 5,
+          "name": "Geeta Bhawan",
+          "landmark": "Geeta Bhawan",
+          "neighbourhood": "East Indore",
+          "fullAddress": "Geeta Bhawan, East Indore - 452001",
+          "operationStart": 9,
+          "operationEnd": 23,
+          "closingDays": ["Friday"]
+        }
+      ]
+    }
+  ]
+}
