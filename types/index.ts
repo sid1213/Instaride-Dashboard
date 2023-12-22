@@ -24,7 +24,7 @@ export interface PackageI {
   limit: number;
   deposit: number;
 }
-interface Vehicle {
+export interface Vehicle {
   _id: number;
   brand: string;
   name: string;
@@ -53,8 +53,8 @@ interface Vehicle {
   policyNumber: string;
   owner: Owner;
 }
-interface Hub {
-  _id: number;
+export interface Hub {
+  _id: string;
   name: string;
   landmark: string;
   neighbourhood: string;
@@ -64,7 +64,7 @@ interface Hub {
   closingDays?: null | string[];
   vehicles: Vehicle[];
 }
-interface Owner {
+export interface Owner {
   _id: string;
   name: string;
   phone: string;
@@ -73,7 +73,7 @@ interface Owner {
   createdAt: string;
   updatedAt: string;
 }
-interface CitiesI {
+export interface CitiesI {
   _id: string;
   name: string;
   image: string;
