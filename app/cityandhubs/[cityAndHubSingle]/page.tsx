@@ -4,12 +4,10 @@ import React, { useEffect, useState } from "react";
 import { Table, Tag, Typography } from "antd";
 import { ColumnsType } from "antd/es/table";
 import { Hub } from "@/types";
-import data from "../../../public/cities.json";
-
 import { usePathname } from "next/navigation";
-import path from "path";
+import { useAppSelector } from "@/redux";
 
-interface DataType extends Omit<Hub, "vehicles"> {
+interface DataType extends Omit<Hub, "vehicles" | "createdAt" | "updatedAt"> {
   key: string;
 }
 
@@ -74,17 +72,16 @@ const columns: ColumnsType<DataType> = [
 const { Title } = Typography;
 
 const Page: React.FC = () => {
-  const [hubs, setHubs] = useState<DataType[]>([]);
+  const [hubs, setHubs] = useState<DataType[]>();
   const pathName = usePathname();
   const id = pathName.split("/").pop();
-  console.log(id);
+  const cities = useAppSelector((state) => state?.cities);
 
   useEffect(() => {
-    const citiesData = data.cities;
-    const cityIndex = citiesData.findIndex((city) => city.name == id);
-    const city = citiesData[cityIndex];
+    const cityIndex = cities?.findIndex((city) => city.name == id);
+    const city = cities && cities[cityIndex!];
 
-    const hubsArray = city.hubs.map((hub) => {
+    const hubsArray = city?.hubs.map((hub) => {
       return {
         ...hub,
         key: hub._id.toString(),

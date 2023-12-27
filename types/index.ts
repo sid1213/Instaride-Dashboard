@@ -1,57 +1,51 @@
-export interface VehicleSchemaI {
-  _id: number;
-  name: string;
-  brand: string;
-  tips: number;
-  pickup: boolean;
-  city: string;
-  hubs: string[];
-  price: number;
-  limit: number;
-  deposit: number;
-  make_year: number;
-  img: string;
-  package: PackageI[];
-  available: boolean;
-  transmission: string;
-  available_date: string;
-  excess_charge: number;
-  late_penalty: number;
-}
 export interface PackageI {
   name: string;
   price: number;
   limit: number;
   deposit: number;
+  active: boolean;
+  _id: string;
 }
-export interface Vehicle {
+export interface VehicleI {
   _id: number;
   brand: string;
   name: string;
+  city: string;
+  hub: string;
   image: string;
-  mileage: number;
   topSpeed: number;
-  displacement: number;
-  fuelTankCapacity: number;
   kerbWeight: number;
+  isElectric?: boolean;
+  // petrol
+  fuelTankCapacity?: number;
+  mileage?: number;
+  displacement?: number;
+  startingMethod?: "KICK" | "SELF";
+  transmission?: string;
+
+  // electric
   ridingRange?: number;
   chargingTime?: number;
-  motorPower?: boolean;
-  engineType: string;
-  startingMethod: "KICK" | "SELF";
-  transmission: string;
+
+  seats: number;
   makeYear: number;
-  package: PackageI[];
-  isAdminBlocked: boolean;
-  tnc: string[];
+
+  package?: PackageI[];
+  tnc?: string[];
+
+  // these values will always going to be false while Adding the vehicles and order count will also be zero
   availability: boolean;
+  isAdminBlocked: boolean;
   ordersCount: number;
-  excess_charge: number;
-  late_penalty: number;
+
+  excessCharge: number;
+  latePenalty: number;
   regNumber: string;
   chNumber: string;
   policyNumber: string;
   owner: Owner;
+  createdAt?: string;
+  updatedAt?: string;
 }
 export interface Hub {
   _id: string;
@@ -62,7 +56,8 @@ export interface Hub {
   operationStart: number;
   operationEnd: number;
   closingDays?: null | string[];
-  vehicles: Vehicle[];
+  createdAt: string;
+  updatedAt: string;
 }
 export interface Owner {
   _id: string;
@@ -70,8 +65,6 @@ export interface Owner {
   phone: string;
   otherPhone: string;
   location: string;
-  createdAt: string;
-  updatedAt: string;
 }
 export interface CitiesI {
   _id: string;
@@ -80,7 +73,15 @@ export interface CitiesI {
   active: boolean;
   content: string;
   title: string;
+  hubs: Hub[];
   createdAt: string;
   updatedAt: string;
-  hubs: Hub[];
+  __v?: number;
+}
+
+export interface UserI {
+  _id: string;
+  role: string;
+  username: string;
+  email: string;
 }

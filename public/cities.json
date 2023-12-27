@@ -5,8 +5,8 @@
       "name": "Delhi",
       "image": "Delhi.png",
       "active": true,
-      "content": "The capital city of India, Delhi is a vibrant metropolis blending historic landmarks with modern life.",
-      "title": "Delhi: Historic Heart of India",
+      "content": "Information about Delhi...",
+      "title": "Delhi City",
       "hubs": [
         {
           "_id": 1,
@@ -65,8 +65,8 @@
       "name": "Bhopal",
       "image": "Bhopal.png",
       "active": true,
-      "content": "Known as the 'City of Lakes,' Bhopal is a serene blend of natural beauty and cultural richness.",
-      "title": "Bhopal: City of Lakes",
+      "content": "Information about Bhopal...",
+      "title": "Bhopal City",
       "hubs": [
         {
           "_id": 1,
@@ -125,8 +125,8 @@
       "name": "Raipur",
       "image": "Raipur.png",
       "active": true,
-      "content": "A bustling city in central India, Raipur is known for its cultural diversity and rapid development.",
-      "title": "Raipur: Harmony in Diversity",
+      "content": "Information about Raipur...",
+      "title": "Raipur City",
       "hubs": [
         {
           "_id": 1,
@@ -165,8 +165,8 @@
       "name": "Bilaspur",
       "image": "Bilaspur.png",
       "active": true,
-      "content": "Located in Chhattisgarh, Bilaspur is a city known for its rich cultural heritage and warm hospitality.",
-      "title": "Bilaspur: Heritage and Hospitality",
+      "content": "Information about Bilaspur...",
+      "title": "Bilaspur City",
       "hubs": [
         {
           "_id": 1,
@@ -205,8 +205,8 @@
       "name": "Indore",
       "image": "Indore.png",
       "active": true,
-      "content": "Known for its culinary delights, Indore is a vibrant city that seamlessly blends tradition with modernity.",
-      "title": "Indore: Culinary Capital of India",
+      "content": "Information about Indore...",
+      "title": "Indore City",
       "hubs": [
         {
           "_id": 1,

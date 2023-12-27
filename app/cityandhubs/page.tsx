@@ -8,11 +8,9 @@ import data from "../../public/cities.json";
 import Link from "next/link";
 import { EyeOutlined } from "@ant-design/icons";
 import { usePathname } from "next/navigation";
+import { useAppSelector } from "@/redux";
 interface DataType
-  extends Omit<
-    CitiesI,
-    "hubs" | "vehicles" | "createdAt" | "updatedAt" | "active"
-  > {
+  extends Omit<CitiesI, "hubs" | "createdAt" | "updatedAt" | "active" | "__v"> {
   key: string;
   hubs: string[];
   view: ReactNode;
@@ -76,13 +74,12 @@ const columns: ColumnsType<DataType> = [
 const { Title } = Typography;
 
 const Page: React.FC = () => {
-  const [cities, setCities] = useState<DataType[]>([]);
   const pathName = usePathname();
+  const [cityArray, setCityArray] = useState<DataType[]>();
+  const cities = useAppSelector((state) => state?.cities);
 
   useEffect(() => {
-    const citiesData = data.cities;
-
-    const CityArray = citiesData.map((city) => {
+    const citiesData = cities?.map((city) => {
       return {
         ...city,
         key: city._id,
@@ -95,9 +92,8 @@ const Page: React.FC = () => {
         hubs: city.hubs.map((hub) => hub.name),
       };
     });
-
-    setCities(CityArray);
-  }, [pathName]);
+    setCityArray(citiesData);
+  }, [pathName, cities]);
 
   return (
     <div>
@@ -107,7 +103,7 @@ const Page: React.FC = () => {
       <Table
         scroll={{ x: true }}
         columns={columns}
-        dataSource={cities}
+        dataSource={cityArray}
         pagination={false}
       />
     </div>

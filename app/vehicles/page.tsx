@@ -4,9 +4,11 @@ import React, { useEffect, useState } from "react";
 import getAllVehicles from "../api/vahicles/getAllVehicles";
 import { Flex, FloatButton, Table, Tag, Typography } from "antd";
 import { ColumnsType } from "antd/es/table";
-import { PackageI, VehicleSchemaI } from "@/types";
+import { PackageI, VehicleI } from "@/types";
+import { PlusSquareOutlined } from "@ant-design/icons";
+import AddVehicleForm from "@/components/Vehicle/AddVehicleForm";
 
-interface DataType extends VehicleSchemaI {
+interface DataType extends VehicleI {
   key: string;
 }
 
@@ -17,14 +19,14 @@ const columns: ColumnsType<DataType> = [
     key: "_id",
   },
   {
-    title: "City",
-    dataIndex: "city",
-    key: "city",
+    title: "Image",
+    dataIndex: "image",
+    key: "image",
   },
   {
-    title: "Hub",
-    dataIndex: "hub",
-    key: "hub",
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
   },
   {
     title: "Brand",
@@ -32,120 +34,101 @@ const columns: ColumnsType<DataType> = [
     key: "brand",
   },
   {
-    title: "Hubs",
-    key: "hubs",
-    dataIndex: "hubs",
-    render: (_, { hubs }) => (
-      <>
-        {hubs.map((hubs) => {
-          let color = hubs.length > 5 ? "geekblue" : "green";
-          if (hubs === "loser") {
-            color = "volcano";
-          }
-          return (
-            <Tag color={color} key={hubs}>
-              {hubs.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </>
-    ),
+    title: "City & Hub",
+    dataIndex: "cityAndHub",
+    key: "cityAndHub",
   },
 
   {
-    title: "Limit",
-    key: "limit",
-    dataIndex: "limit",
-    render: (limit: string) => {
-      return `${limit}km`;
-    },
-  },
-  {
-    title: "Deposit",
-    key: "deposit",
-    dataIndex: "deposit",
-    render: (deposit: string) => {
-      return `${deposit}/-`;
-    },
-  },
-  {
-    title: "Make year",
-    key: "make_year",
-    dataIndex: "make_year",
-  },
-  {
-    title: "Img",
-    key: "img",
-    dataIndex: "img",
-  },
-  {
-    title: "price",
-    key: "price",
-    dataIndex: "price",
-    render: (price: string) => {
-      return `${price}/-`;
-    },
-  },
-
-  {
-    title: "Duration",
-    key: "duration",
-    dataIndex: "duration",
-    render: (durations: PackageI[]) => (
+    title: "Package",
+    key: "package",
+    dataIndex: "package",
+    render: (Packages: PackageI[]) => (
       <Flex justify="space-between" gap={"small"}>
-        {durations.map((duration) => {
+        {Packages?.map((Packages) => {
           return (
-            <>
-              <Tag key={duration.name}>
-                {duration.name}
+            <React.Fragment key={Packages._id}>
+              <Tag
+                key={Packages.name}
+                color={Packages.active ? "success" : "cyan-inverse"}
+              >
+                {Packages.name}
                 <br />
-                Price:{duration.price}/-
+                Price:{Packages.price}/-
                 <br />
-                limit:{duration.limit} km
+                Deposit:{Packages.deposit}/-
+                <br />
+                limit:{Packages.limit} km
                 <br />
               </Tag>
               <br />
 
               <br />
-            </>
+            </React.Fragment>
           );
         })}
       </Flex>
     ),
   },
   {
+    title: "Type",
+    key: "type",
+    dataIndex: "type",
+  },
+  {
     title: "Available",
-    key: "available",
-    dataIndex: "available",
+    key: "availability",
+    dataIndex: "availability",
   },
   {
-    title: "Transmission",
-    key: "transmission",
-    dataIndex: "transmission",
+    title: "Update",
+    key: "update",
+    dataIndex: "update",
   },
   {
-    title: "Available-date",
-    key: "available_date",
-    dataIndex: "available_date",
+    title: "Delete",
+    key: "delete",
+    dataIndex: "delete",
+  },
+  {
+    title: "View",
+    key: "view",
+    dataIndex: "view",
   },
 ];
 
 const { Title } = Typography;
 
 const Page: React.FC = () => {
-  const [vehicle, setVehicle] = useState<DataType[]>([]);
+  const [vehicle, setVehicle] = useState<DataType[]>();
+  const [open, setOpen] = useState<boolean>(false);
+
+  const onOpen = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
+    setOpen(false);
     const data = async () => {
       const data = await getAllVehicles();
 
-      console.log(data);
-      const vehicles = data.map((ele: VehicleSchemaI) => {
+      const vehicles = data.map((ele: DataType) => {
         return {
           ...ele,
           key: ele._id,
-          pickup: ele.pickup ? "YES" : "NO",
-          available: ele.available ? "YES" : "NO",
+          cityAndHub: (
+            <>
+              {ele.city}/{ele.hub}
+            </>
+          ),
+          availability: ele.availability ? "YES" : "NO",
+          type: ele.isElectric ? "ELECTRIC" : "PETROL",
+          delete: <>delete</>,
+          view: <>view</>,
+          update: <>update</>,
         };
       });
       setVehicle(vehicles);
@@ -159,8 +142,20 @@ const Page: React.FC = () => {
       <Title level={2} className={Style.title}>
         All Vehicles{" "}
       </Title>
-      <Table scroll={{ x: true }} columns={columns} dataSource={vehicle} />
-      <FloatButton />
+      <Table
+        scroll={{ x: true }}
+        columns={columns}
+        dataSource={vehicle}
+        pagination={false}
+      />
+      <FloatButton
+        className={Style.addBtn}
+        type="primary"
+        shape="square"
+        icon={<PlusSquareOutlined />}
+        onClick={onOpen}
+      />
+      <AddVehicleForm open={open} onClose={onClose} />
     </div>
   );
 };
