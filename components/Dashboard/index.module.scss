@@ -1,12 +1,10 @@
 .layout {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh !important;
   color: White;
-  h1 {
-    width: fit-content;
-    margin-bottom: 1rem;
-  }
 }
 .content {
+  padding: 1rem !important;
+
   color: black;
 }

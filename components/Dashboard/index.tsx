@@ -1,54 +1,42 @@
 "use client";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import Style from "./index.module.scss";
-import { Layout, Menu, theme } from "antd";
-import Link from "next/link";
+import { Layout, Spin, theme } from "antd";
+import Sider from "antd/es/layout/Sider";
+import { Content } from "antd/es/layout/layout";
+import SiderContent from "./SiderContent";
+import LogIn from "../LogIn";
+import { useAppSelector } from "@/redux";
+import { useRouter } from "next/navigation";
 
-const { Sider, Content } = Layout;
 export default function Dashboard({ children }: { children: ReactNode }) {
   const [collapsed, setCollapsed] = useState(false);
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+
+  const { user, loading } = useAppSelector((state) => state);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (user?.role !== "ADMIN") {
+      router.push("/", { scroll: true });
+    }
+  }, [user]);
+
   return (
-    <Layout className={Style.layout}>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
-        <h1>Instaride</h1>
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          items={[
-            {
-              key: "1",
-              label: <Link href="/">Dashboard</Link>,
-            },
-            {
-              key: "2",
-
-              label: <Link href="/users">Users</Link>,
-            },
-            {
-              key: "3",
-
-              label: <Link href="/vehicles">Vehicles</Link>,
-            },
-          ]}
-        />
-      </Sider>
-      <Layout>
-        <Content
-          style={{
-            margin: "24px 16px",
-            padding: 24,
-            minHeight: 280,
-            background: colorBgContainer,
-          }}
-          className={Style.content}
-        >
-          {children}
-        </Content>
-      </Layout>
-    </Layout>
+    <>
+      {user?.role === "ADMIN" ? (
+        <Spin spinning={loading}>
+          <Layout className={Style.layout} hidden={!loading}>
+            <Sider trigger={null} collapsible collapsed={collapsed}>
+              <SiderContent />
+            </Sider>
+            <Layout>
+              <Content className={Style.content}>{children}</Content>
+            </Layout>
+          </Layout>
+        </Spin>
+      ) : (
+        <LogIn />
+      )}
+    </>
   );
 }

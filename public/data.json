@@ -1,0 +1,1210 @@
+{
+  "cityData": [
+    {
+      "cityName": "Delhi",
+      "image": "path/to/delhi.jpg",
+      "hubs": [
+        {
+          "_id": 1,
+          "name": "Rajiv Chowk",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        },
+        {
+          "_id": 2,
+          "name": "Janpath",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cityName": "Mumbai",
+      "image": "path/to/mumbai.jpg",
+      "hubs": [
+        {
+          "_id": 3,
+          "name": "Juhu",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        },
+        {
+          "_id": 4,
+          "name": "Bandra",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cityName": "Raipur",
+      "image": "path/to/raipur.jpg",
+      "hubs": [
+        {
+          "_id": 5,
+          "name": "Ghadi Chowk",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        },
+        {
+          "_id": 6,
+          "name": "Telibandha",
+          "vehicles": [
+            {
+              "_id": 1,
+              "name": "Royal Cruiser 350",
+              "brand": "Royal Riders",
+              "tips": 5,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 100,
+              "limit": 200,
+              "deposit": 500,
+              "make_year": 2022,
+              "img": "path/to/royal_cruiser_350.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Premium", "price": 100, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-01-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "John Doe",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-1234",
+              "chNumber": "CH-5678",
+              "policyNumber": "POLICY-ABC123"
+            },
+            {
+              "_id": 2,
+              "name": "Bajaj Streetmaster 200",
+              "brand": "Bajaj Motors",
+              "tips": 7,
+              "pickup": true,
+              "city": "Delhi",
+              "hubs": ["Rajiv Chowk", "Janpath"],
+              "price": 120,
+              "limit": 180,
+              "deposit": 550,
+              "make_year": 2021,
+              "img": "path/to/bajaj_streetmaster_200.jpg",
+              "package": [
+                { "name": "Standard", "price": 60, "limit": 120 },
+                { "name": "Executive", "price": 120, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Manual",
+              "available_date": "2023-02-01",
+              "excess_charge": 15,
+              "late_penalty": 25,
+              "owner": {
+                "name": "Jane Smith",
+                "phone": "+91 87654 32109",
+                "otherPhone": "+91 87654 54321",
+                "location": "Delhi, India"
+              },
+              "regNumber": "DL-5678",
+              "chNumber": "CH-9876",
+              "policyNumber": "POLICY-XYZ789"
+            },
+            {
+              "_id": 3,
+              "name": "Hero Splendor Plus",
+              "brand": "Hero MotoCorp",
+              "tips": 4,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 80,
+              "limit": 150,
+              "deposit": 400,
+              "make_year": 2022,
+              "img": "path/to/hero_splendor_plus.jpg",
+              "package": [
+                { "name": "Basic", "price": 40, "limit": 80 },
+                { "name": "Premium", "price": 80, "limit": 150 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-03-01",
+              "excess_charge": 8,
+              "late_penalty": 18,
+              "owner": {
+                "name": "Amit Patel",
+                "phone": "+91 76543 21098",
+                "otherPhone": "+91 76543 32109",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-PQR456"
+            },
+            {
+              "_id": 4,
+              "name": "TVS Jupiter",
+              "brand": "TVS Motor",
+              "tips": 6,
+              "pickup": true,
+              "city": "Mumbai",
+              "hubs": ["Juhu", "Bandra"],
+              "price": 100,
+              "limit": 180,
+              "deposit": 500,
+              "make_year": 2021,
+              "img": "path/to/tvs_jupiter.jpg",
+              "package": [
+                { "name": "Standard", "price": 50, "limit": 100 },
+                { "name": "Executive", "price": 100, "limit": 180 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-04-01",
+              "excess_charge": 10,
+              "late_penalty": 20,
+              "owner": {
+                "name": "Ritu Shah",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Mumbai, India"
+              },
+              "regNumber": "MH-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-DEF789"
+            },
+            {
+              "_id": 5,
+              "name": "Suzuki Access 125",
+              "brand": "Suzuki Motorcycle",
+              "tips": 5,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 90,
+              "limit": 160,
+              "deposit": 450,
+              "make_year": 2022,
+              "img": "path/to/suzuki_access_125.jpg",
+              "package": [
+                { "name": "Basic", "price": 45, "limit": 90 },
+                { "name": "Premium", "price": 90, "limit": 160 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-05-01",
+              "excess_charge": 9,
+              "late_penalty": 19,
+              "owner": {
+                "name": "Rajesh Kumar",
+                "phone": "+91 98765 43210",
+                "otherPhone": "+91 98765 54321",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-1234",
+              "chNumber": "CH-4321",
+              "policyNumber": "POLICY-XYZ456"
+            },
+            {
+              "_id": 6,
+              "name": "Honda Activa 6G",
+              "brand": "Honda Motorcycle",
+              "tips": 7,
+              "pickup": true,
+              "city": "Raipur",
+              "hubs": ["Ghadi Chowk", "Telibandha"],
+              "price": 110,
+              "limit": 200,
+              "deposit": 600,
+              "make_year": 2021,
+              "img": "path/to/honda_activa_6g.jpg",
+              "package": [
+                { "name": "Standard", "price": 55, "limit": 110 },
+                { "name": "Executive", "price": 110, "limit": 200 }
+              ],
+              "available": true,
+              "transmission": "Automatic",
+              "available_date": "2023-06-01",
+              "excess_charge": 11,
+              "late_penalty": 21,
+              "owner": {
+                "name": "Priya Sharma",
+                "phone": "+91 87654 56789",
+                "otherPhone": "+91 87654 67890",
+                "location": "Raipur, India"
+              },
+              "regNumber": "CG-5678",
+              "chNumber": "CH-8765",
+              "policyNumber": "POLICY-ABC789"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
